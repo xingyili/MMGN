@@ -12,10 +12,10 @@ Identifying cancer driver genes has paramount significance in elucidating the in
 
 ### Special dependencies
 
-*   Pytorch xxx
-*   Pytorch geometric xxx
-*   Sklearn xxx
-*   Deepod xxx
+*   Pytorch 1.10.1
+*   Pytorch geometric 2.0.1
+*   Sklearn 1.3.2
+*   Deepod 0.4.1
 
 ### Overview
 
