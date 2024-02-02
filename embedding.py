@@ -9,21 +9,20 @@ def train_embedding(model, optimizer, data_loader, net_types):
         x = batch['gene'].x
         edge_indices = [batch['gene', net_name, 'gene'].edge_index for net_name in net_types]
         pos_hs, neg_hs, summaries = model(x, edge_indices)
-        loss, loss1 = model.loss(pos_hs, neg_hs, summaries)
+        loss,_ = model.loss(pos_hs, neg_hs, summaries)
         loss.backward()
         optimizer.step()
-        return float(loss), float(loss1)
+        return float(loss)
 
     patience = 20
     best = 1e9
     cnt_wait = 0
 
     for epoch in range(1, 10001):
-        for batch in data_loader:
-            loss, loss1 = train(batch)
+        loss = train(data_loader)
         if epoch % 50 == 0:
             # val_acc, test_acc = test()
-            print(f'Epoch: {epoch:03d}, Loss_ALL: {loss:.4f}')
+            print(f'Epoch: {epoch:03d}')
 
         if loss < best:
             best = loss

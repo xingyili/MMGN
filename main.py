@@ -83,12 +83,13 @@ if __name__ == '__main__':
     ###训练向量:
     print("-----1. Training Embedding-----")
     batch_size = 16
-    data_loader = DataLoader([data], batch_size=batch_size, shuffle=True)
+    #data_loader = DataLoader([data], batch_size=batch_size, shuffle=True)
+    data_loader = data
     train_embedding(model_DMGI, optimizer_DMGI, data_loader, net_types)
     print("-----2. Getting Embedding-----")
     embedding = get_embedding(model_DMGI)  # get embedding
     encoded_embedding = embedding
-    dataIO.save_embedding(embedding) #保存嵌入向量
+    #dataIO.save_embedding(embedding) #保存嵌入向量
     print("Saved!")
 
     ###使用DEEPOD中的DEEP SVDD：

@@ -3,15 +3,14 @@ import numpy as np
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.metrics import precision_score, recall_score, f1_score, make_scorer, fbeta_score
 import torch
-from torch.utils.tensorboard import SummaryWriter
-from deepod.models.dsvdd import DeepSVDD
+from deepod.models.tabular import DeepSVDD
 from xgboost import XGBClassifier
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 from sklearn.model_selection import cross_val_score, StratifiedKFold
 import time
 from utils.CrossValidation import CrossValidationPlot
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-writer = SummaryWriter('./run_deepsvdd')
+
 
 def deepod_dsvdd(kcg_intersec, encoded_embedding, EID_to_index, Maybe_cancer_genes_list):
     cancer_genes = kcg_intersec[0].tolist()
