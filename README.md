@@ -11,7 +11,7 @@ Identifying cancer driver genes has paramount significance in elucidating the in
 ## Getting Started
 
 ### Special dependencies
-
+*   python 3.8.3
 *   Pytorch 1.10.1
 *   Pytorch geometric 2.0.1
 *   Sklearn 1.3.2
