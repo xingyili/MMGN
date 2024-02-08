@@ -5,7 +5,7 @@
 ## Description
 
 Identifying cancer driver genes has paramount significance in elucidating the intricate mechanisms underlying cancer development, progression, and therapeutic interventions. Abundant omics data and interactome networks provided by numerous extensive databases enable the application of graph deep learning techniques that incorporate network structures into the deep learning framework. However, most existing models primarily focus on individual network, inevitably neglecting the in-completeness and noise of interactions. Moreover, samples with imbalanced classes in driver gene identification hamper the performance of models. To address this, we propose a novel deep learning framework MMGN which integrates multiplex networks and pan-cancer multiomics data using graph neural networks combined with negative sample inference to discover cancer driver genes, which not only enhances gene feature learning based on the mutual information and the consensus regularizer, but also achieves balanced class of positive and negative samples for model training. The reliability of MMGN has been verified by the area under the Receiver Operating Characteristic (AUROC) curves and the area under the precision-recall curves (AUPRC). We believe MMGN has the potential to provide new prospects in precision oncology and may find broader applications in predicting bi-omarkers for other intricate diseases.&#x20;
-![Mainframe](figure/MainFrame_ver6.png)
+![Mainframe](figure/MainframeVer6.png)
 
 
 ## Getting Started
