@@ -1,6 +1,6 @@
 # MMGN
 
-## **Integration of Multiplex network and Multiomics data using Graph neural networks combined with Negative sample generation to identify cancer driver gene for pan-cancer analysis**
+## **Multiplex networks and pan-cancer multiomics-based driver gene identi-fication using graph neural networks**
 
 ## Description
 
